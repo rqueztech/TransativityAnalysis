@@ -1,5 +1,3 @@
-# pre cleaned data after strenuous analysis compared to joyo table. this is every transativity ending that is 100% transative or intransative, guaranteed.
-
 alltransativities = '''
 kau_1 -> ending 向かう (む - かう)Intransative To face/head toward
 kabu_1 -> ending 浮かぶ (う - かぶ)Intransative To float （on liquid）
@@ -368,7 +366,6 @@ def functionmain(valueEntered):
 	for index in range(len(orderedArrayEnding) - 1, 0, -1):
 		if len(orderedArrayEnding[index]) > 0:
 			print(orderedArrayEnding[index], ":", str(index))
-			print("this here -> ", orderedArrayEnding[index])
 			if str(index) == "他":
 				transativeArray.append(orderedArrayEnding[index])
 			elif str(index) == "自":
@@ -378,7 +375,6 @@ print("----------------------------")
 functionmain("beginning")
 print("----------------------------")
 functionmain("ending")
-
 print("---------- Trans -------------")
 print(transativeArray)
 print("---------- Intrans -------------")
